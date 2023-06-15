@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap');
+
+html {font-family: 'Georama', sans-serif;}
+
+body {background-image: url(../img/fondito2.jpg);
+    background-size: 100%;}
+
+#appBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 420px; 
+   width: 300px;
+   background-image: url(../img/calculadora2.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin: 0 auto;
+}
+
+#appBg input[type=textfield] {
+    height: 25%;
+    width: 100%;
+    cursor: default;
+    padding: 2px;
+    position: relative; top: 4vh;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    border-radius: 20%;
+    background-image: url(../img/pantalla2.jpg);
+    font-weight: bold;
+    box-shadow: 1px 3px black;
+
+}
+
+#appBg input[type=button], input[type=reset] {
+    width: 22%;
+    cursor: pointer;
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    border-radius: 50%;
+    position: relative; top: 5vh;
+    box-shadow: 3px 5px black;
+
+
+}
+
+#appBg .lila {
+    background-color: rgb(206, 172, 238);
+}
+
+#appBg .rosa {
+    background-color: rgb(233, 175, 184);
+}
+
+#appBg input[type=button]:hover {color: rgb(251, 251, 150);
+    background-color: rgb(129, 72, 147);
+}
+
+#appBg .rosa:hover {color: rgb(242, 255, 168);
+    background-color: rgb(236, 105, 206);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora E7</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div id="appBg">
+        <form name="Calculadora">
+            <input type="textfield" name="ans" value="" autocomplete="off" readonly >
+
+            <input type="button" value="7" onclick="document.Calculadora.ans.value+='7'" class="lila">
+            <input type="button" value="8" onclick="document.Calculadora.ans.value+= '8'" class="lila">
+            <input type="button" value="9" onclick="document.Calculadora.ans.value+= '9'" class="lila"> 
+            <input type="button" value="+" onclick="document.Calculadora.ans.value+='+'" class="rosa">
+            <br>
+            <input type="button" value="4" onclick="document.Calculadora.ans.value+='4'" class="lila">
+            <input type="button" value="5" onclick="document.Calculadora.ans.value+='5'" class="lila">
+            <input type="button" value="6" onclick="document.Calculadora.ans.value+='6'" class="lila">
+            <input type="button" value="-" onclick="document.Calculadora.ans.value+='-'" class="rosa">
+            <br>
+            <input type="button" value="1" onclick="document.Calculadora.ans.value+='1'" class="lila">
+            <input type="button" value="2" onclick="document.Calculadora.ans.value+='2'" class="lila">
+            <input type="button" value="3" onclick="document.Calculadora.ans.value+='3'" class="lila">
+            <input type="button" value="X" onclick="document.Calculadora.ans.value+='*'" class="rosa">
+            <br>
+            <input type="button" value="0" onclick="document.Calculadora.ans.value+='0'" class="lila">
+            <input type="reset" value="C" class="rosa"> 
+            <input type="button" value="=" onclick="document.Calculadora.ans.value=eval(document.Calculadora.ans.value)" class="rosa">
+            <input type="button" value="/" onclick="document.Calculadora.ans.value+='/'" class="rosa">
+        </form>
+    </div>
+
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
